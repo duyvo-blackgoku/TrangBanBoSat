@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Bò Trường">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Bò Trường - Chuyên cung cấp các loài bò sát cảnh chất lượng cao, rồng, tắc kè, trăn cảnh, kỳ nhông và phụ kiện chuyên dụng." />
+    <meta name="keywords" content="bò sát, rồng Nam Mỹ, tắc kè, trăn cảnh, kỳ nhông, thú cưng bò sát, Bò Trường" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Bò Trường - Thế giới bò sát chất lượng</title>
+    <style>
+        /* Tinh chỉnh nhỏ để phù hợp với chủ đề bò sát */
+        .hero {
+            background: linear-gradient(to right, #1e3c2c, #2a5a3a);
+        }
+
+        .btn-secondary {
+            background-color: #d68b3c;
+            border-color: #d68b3c;
+        }
+
+            .btn-secondary:hover {
+                background-color: #b56f2a;
+                border-color: #b56f2a;
+            }
+
+        .product-item .product-title {
+            font-weight: 700;
+        }
+
+        .footer-logo, .navbar-brand {
+            font-weight: 800;
+        }
+
+        .custom-navbar {
+            background-color: #0f2b1f !important;
+        }
+
+        .why-choose-section .feature .icon img {
+            filter: brightness(0) invert(1);
+        }
+
+        .testimonial-section {
+            background: #eef5ea;
+        }
+
+        .blog-section .post-entry .post-thumbnail img {
+            transition: 0.3s;
+        }
+
+        .blog-section .post-entry:hover .post-thumbnail img {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Bò Trường navigation bar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bò Trường<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsBòTrường" aria-controls="navbarsBòTrường" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsBòTrường">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                    <li><a class="nav-link" href="shop.html">Cửa hàng</a></li>
+                    <li><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+
+                    <li><a class="nav-link" href="contact.html">Liên hệ</a></li>
+                </ul>
+                <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                    <li>
+                        <a class="nav-link" href="javascript:void(0)" onclick="openAdminLogin()">
+                            <img src="images/user.svg" alt="Admin Login">
+                        </a>
+                    </li>
+                    <li><a class="nav-link" href="cart.html"><img src="images/cart.svg" alt="Giỏ hàng"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header/Navigation -->
+    <!-- Start Hero Section - Chủ đề bò sát -->
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1>Khám phá thế giới<span class="d-block">Bò sát cao cấp</span></h1>
+                        <p class="mb-4">Bò Trường tự hào là đơn vị cung cấp các loại bò sát khỏe mạnh đã được thuần chủng đồng thời cũng cung cấp các dịch vụ chăm sóc tận tâm cho khách hàng.Từ rồng nam mỹ, tắc kè hoa đến trăn cảnh và rùa chân đỏ - tất cả đều được nuôi trong điều kiện môi trường tốt nhất và hiện đang có mặt tại Bò Trường. </p>
+                        <p><a href="shop.html" class="btn btn-secondary me-2">Mua ngay</a><a href="#" class="btn btn-white-outline">Khám phá</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="hero-img-wrap">
+                        <!-- Thay couch.png bằng hình ảnh rồng komodo hoặc bò sát ấn tượng (sử dụng ảnh placeholder từ images/ nếu có, nhưng để chân thực chúng ta dùng reptile hero) -->
+                        <img src="https://static-images.vnncdn.net/images/0008QI/rong-nam-my-26.jpg" alt="Rồng Nam Mỹ" class="img-fluid" style="border-radius: 30px; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.3);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero Section -->
+    <!-- Start Product Section - Sản phẩm bò sát nổi bật -->
+    <div class="product-section">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: giới thiệu -->
+                <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                    <h2 class="mb-4 section-title">Hệ sinh thái bò sát đầy màu sắc</h2>
+                    <p class="mb-4">
+                        Không bán hàng trôi nổi.
+                        Chỉ cung cấp cá thể khỏe mạnh, nguồn gốc rõ ràng, chăm sóc chuyên nghiệp.
+                        Bò Trường cam kết hậu mãi rõ ràng – mua là an tâm.
+                        Inbox ngay để được tư vấn và giữ hàng!.
+                    </p>
+                    <p><a href="shop.html" class="btn">Xem tất cả</a></p>
+                </div>
+
+                <!-- Start Column 2 - Rồng Nam Mỹ -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="cart.html">
+                        <img src="https://mew.vn/wp-content/uploads/2020/12/danh-muc-rong-nam-my-350x350.jpg" width="300" height="300" class="img-fluid product-thumbnail" alt="Rồng Nam Mỹ">
+                        <h3 class="product-title">Rồng Nam Mỹ</h3>
+                        <strong class="product-price">3.200.000₫</strong>
+                    </a>
+                </div>
+
+                <!-- Start Column 3 - Tắc kè hoa mào -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="cart.html">
+                        <img src="https://mew.vn/wp-content/uploads/2020/12/danh-muc-than-lan-da-bao-350x350.jpg" width="300" height="300" class="img-fluid product-thumbnail" alt="Tắc kè hoa mào">
+                        <h3 class="product-title">Thằn lằn da báo</h3>
+                        <strong class="product-price">1.850.000₫</strong>
+
+                    </a>
+                </div>
+
+                <!-- Start Column 4 - Rùa lá mata -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="cart.html">
+                        <img src="https://mew.vn/wp-content/uploads/2020/12/san-pham-rua-la-mata-2-600x600.jpg" width="300" height="300" class="img-fluid product-thumbnail" alt="Trăn gấm">
+                        <h3 class="product-title">Rùa lá mata</h3>
+                        <strong class="product-price">2.490.000₫</strong>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Product Section -->
+    <!-- Start Why Choose Us Section - Tại sao chọn Bò Trường -->
+    <div class="why-choose-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Tại sao chọn Bò Trường?</h2>
+                    <p>Với nhiều kinh nghiệm trong việc nhân giống và chăm sóc.Chúng tôi,Bò Trường tự hào là đơn vị cung cấp những giống bò sát uy tín và chất lượng đến tay những khách hàng yêu thích loại thú cưng độc đáo này </p>
+                    <div class="row my-5">
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon"><img src="images/truck.svg" alt="Vận chuyển" class="imf-fluid"></div>
+                                <h3>Vận chuyển chuyên nghiệp</h3>
+                                <p>Giao hàng tận nơi, đảm bảo an toàn cho bò sát trong suốt hành trình, có hộp vận chuyển chuyên dụng.</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon"><img src="images/bag.svg" alt="Mua sắm dễ dàng" class="imf-fluid"></div>
+                                <h3>Chứng nhận sức khỏe</h3>
+                                <p>Mỗi cá thể đều được kiểm tra sức khỏe, cam kết không mầm bệnh, ký sinh trùng và có giấy tờ nguồn gốc.</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon"><img src="images/support.svg" alt="Hỗ trợ" class="imf-fluid"></div>
+                                <h3>Hỗ trợ 24/7</h3>
+                                <p>Đội ngũ bác sĩ thú y và chuyên gia bò sát giải đáp mọi thắc mắc về chế độ ăn, terrarium, ánh sáng và nhiệt độ.</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon"><img src="images/return.svg" alt="Đổi trả" class="imf-fluid"></div>
+                                <h3>Chính sách đổi trả linh hoạt</h3>
+                                <p>Đổi trả trong vòng 7 ngày nếu phát sinh vấn đề về sức khỏe không mong muốn (theo điều khoản).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Why Choose Us Section -->
+    <!-- Start We Help Section - Dịch vụ setup terrarium -->
+    <div class="we-help-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="imgs">
+                        <img src="images/terrarium.png" alt="terrarium" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-5 ps-lg-5">
+                    <h2 class="section-title mb-4">Chúng tôi giúp bạn thiết kế không gian sống hoàn hảo cho bò sát</h2>
+                    <p>Bò Trường không chỉ bán thú cưng mà còn cung cấp giải pháp toàn diện về terrarium, đèn UVB, thiết bị sưởi, giá thể và cây cảnh phù hợp. Đội ngũ chúng tôi sẽ tư vấn setup chuồng nuôi khoa học, mô phỏng môi trường tự nhiên giúp bò sát phát triển tối ưu.</p>
+                    <ul class="row list-unstyled my-4">
+                        <li class="col-6">➜ Tư vấn thiết kế terrarium theo loài (rừng nhiệt đới, sa mạc, bán cạn).</li>
+                        <li class="col-6">➜ Cung cấp thức ăn sống, vitamin, canxi chuyên dụng.</li>
+                        <li class="col-6">➜ Hướng dẫn chăm sóc, xử lý bệnh thường gặp.</li>
+                        <li class="col-6">➜ Hỗ trợ kỹ thuật lắp đặt thiết bị nhiệt độ, độ ẩm.</li>
+                    </ul>
+                    <p><a href="#" class="btn">Tìm hiểu thêm</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End We Help Section -->
+    <!-- Start Popular Product - Các loài bò sát được yêu thích -->
+    <div class="popular-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-sm d-flex">
+                        <div class="thumbnail"> <img src="images/kynhongxanhnho.png" alt="Kỳ nhông xanh" class="img-fluid"></div>
+                        <div class="pt-3">
+                            <h3>Kỳ nhông xanh (Iguana)</h3>
+                            <p>Kỳ nhông xanh thuần chủng, dễ thuần, ăn thực vật. Phù hợp người mới bắt đầu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-sm d-flex">
+                        <div class="thumbnail"><img src="images/duoila.png" alt="Tắc kè" class="img-fluid"></div>
+                        <div class="pt-3">
+                            <h3>Tắc kè đuôi lá Satan</h3>
+                            <p>Loài tắc kè ngụy trang độc đáo, ngoại hình ấn tượng, thích hợp sưu tầm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="product-item-sm d-flex">
+                        <div class="thumbnail"><img src="images/tranmatngu.png" alt="Trăn cát" class="img-fluid"></div>
+                        <div class="pt-3">
+                            <h3>Trăn cát Kenya</h3>
+                            <p>Kích thước nhỏ, tính tình hiền lành, dễ nuôi trong không gian hẹp.</p>
+                            <p><a href="#">Chi tiết</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Popular Product -->
+    <!-- Start Testimonial Slider - Khách hàng nói gì -->
+    <div class="testimonial-section">
+        <div class="container">
+            <div class="row"><div class="col-lg-7 mx-auto text-center"><h2 class="section-title">Khách hàng nói về Bò Trường</h2></div></div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="testimonial-slider-wrap text-center">
+                        <div id="testimonial-nav">
+                            <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+                            <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+                        </div>
+                        <div class="testimonial-slider">
+                            <div class="item">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 mx-auto">
+                                        <div class="testimonial-block text-center">
+                                            <blockquote class="mb-5"><p>&ldquo;Cặp tắc kè mình mua từ shop về vừa đẹp lại vừa dễ nuôi, shop còn tư vấn nhiệt tình về chế độ ăn cũng như sẽ hỗ trợ chăm sóc nếu vật nuôi gặp vấn đề sức khỏe sau khi mua về nên sẽ ủng hộ dài dài&rdquo;</p></blockquote>
+                                            <div class="author-info">
+                                                <div class="author-pic"><img src="images/chubbynuamat.png" alt="Khách hàng" class="img-fluid rounded-circle" style="width:70px;"></div>
+                                                <h3 class="font-weight-bold">Phú Khánh</h3>
+                                                <span class="position d-block mb-3">Tây Ninh,Tahm Kench</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 mx-auto">
+                                        <div class="testimonial-block text-center">
+                                            <blockquote class="mb-5"><p>&ldquo;Rồng Nam Mỹ mình mua từ shop đã 1 năm, phát triển tốt, ăn uống mạnh. Đội ngũ hỗ trợ nhanh chóng khi mình hỏi về cách bổ sung canxi. Rất chuyên nghiệp!&rdquo;</p></blockquote>
+                                            <div class="author-info">
+                                                <div class="author-pic"><img src="images/vl.png" alt="Khách hàng" class="img-fluid rounded-circle" style="width:70px;"></div>
+                                                <h3 class="font-weight-bold">Anh Tuấn</h3>
+                                                <span class="position d-block mb-3">Bến Lức</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 mx-auto">
+                                        <div class="testimonial-block text-center">
+                                            <blockquote class="mb-5"><p>&ldquo;Không chỉ bán bò sát, Bò Trường còn tư vấn setup terrarium cực kỳ đẹp. Mình đã mua trọn gói và rất hài lòng. Sẽ giới thiệu bạn bè.&rdquo;</p></blockquote>
+                                            <div class="author-info">
+                                                <div class="author-pic"><img src="images/lomo.png" alt="Khách hàng" class="img-fluid rounded-circle" style="width:70px;"></div>
+                                                <h3 class="font-weight-bold">Phúc Thịnh</h3>
+                                                <span class="position d-block mb-3">Tây Ninh</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonial Slider -->
+    <!-- Start Blog Section - Chia sẻ kiến thức bò sát -->
+    <div class="blog-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6"><h2 class="section-title">Bài viết mới về chăm sóc bò sát</h2></div>
+                <div class="col-md-6 text-start text-md-end"><a href="#" class="more">Xem tất cả bài viết</a></div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                    <div class="post-entry">
+
+                        <div class="post-content-entry">
+                            <h3><a href="#">Hướng dẫn chọn đèn UVB và sưởi cho rồng & tắc kè</a></h3>
+                            <div class="meta"><span>by <a href="#">Bác sĩ Hùng</a></span> <span>on <a href="#">10/03/2025</a></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                    <div class="post-entry">
+
+                        <div class="post-content-entry">
+                            <h3><a href="#">Chế độ dinh dưỡng khoa học: côn trùng, rau củ và bổ sung canxi</a></h3>
+                            <div class="meta"><span>by <a href="#">Chuyên gia dinh dưỡng</a></span> <span>on <a href="#">22/02/2025</a></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                    <div class="post-entry">
+
+                        <div class="post-content-entry">
+                            <h3><a href="#">5 bệnh thường gặp ở bò sát nuôi cảnh và cách phòng tránh</a></h3>
+                            <div class="meta"><span>by <a href="#">Đội ngũ Bò Trường</a></span> <span>on <a href="#">15/01/2025</a></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Section -->
+    <!-- Start Footer Section -->
+    <footer class="footer-section">
+        <div class="container relative">
+            <div class="sofa-img"><img src="images/sofa.png" alt="Hình ảnh trang trí" class="img-fluid" style="opacity:0.1;"></div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="subscription-form">
+                        <h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Email" class="img-fluid"></span><span>Đăng ký nhận tin & ưu đãi</span></h3>
+                        <form action="#" class="row g-3">
+                            <div class="col-auto"><input type="text" class="form-control" placeholder="Họ và tên"></div>
+                            <div class="col-auto"><input type="email" class="form-control" placeholder="Email của bạn"></div>
+                            <div class="col-auto"><button class="btn btn-primary"><span class="fa fa-paper-plane"></span></button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Bò Trường<span>.</span></a></div>
+                    <p class="mb-4">Bò Trường – Nơi hội tụ những người yêu bò sát. Chúng tôi cam kết chất lượng, uy tín và tận tâm, mang đến những người bạn đồng hành độc đáo cho gia đình bạn.</p>
+                    <ul class="list-unstyled custom-social">
+                        <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+                        <li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row links-wrap">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled"><li><a href="#">Về chúng tôi</a></li><li><a href="#">Dịch vụ</a></li><li><a href="#">Blog</a></li><li><a href="#">Liên hệ</a></li></ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled"><li><a href="#">Hỗ trợ</a></li><li><a href="#">Kiến thức</a></li><li><a href="#">Chat trực tiếp</a></li></ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled"><li><a href="#">Tuyển dụng</a></li><li><a href="#">Đội ngũ</a></li><li><a href="#">Chính sách bảo mật</a></li></ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled"><li><a href="#">Rồng Nam Mỹ</a></li><li><a href="#">Tắc kè hoa mào</a></li><li><a href="#">Trăn gấm</a></li><li><a href="#">Kỳ nhông xanh</a></li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top copyright">
+                <div class="row pt-4">
+                    <div class="col-lg-6">
+                        <p class="mb-2 text-center text-lg-start">
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>All Rights Reserved. Thiết kế bởi <a href="https://untree.co">Untree.co</a> &Distributed By ThemeWagon
+                        </p>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end"><ul class="list-unstyled d-inline-flex ms-auto"><li class="me-4"><a href="#">Điều khoản</a></li><li><a href="#">Chính sách riêng tư</a></li></ul></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div id="adminLoginModal" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+z-index:9999;
+justify-content:center;
+align-items:center;
+">
+
+        <div style="
+  background:#fff;
+  width:400px;
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.2);
+  position:relative;
+  ">
+
+            <h2 style="
+    text-align:center;
+    margin-bottom:25px;
+    font-weight:700;
+    color:#0f2b1f;
+    ">
+                Đăng nhập Admin
+            </h2>
+
+            <input type="text"
+                   id="adminUsername"
+                   placeholder="Tên đăng nhập"
+                   style="
+      width:100%;
+      padding:14px;
+      margin-bottom:15px;
+      border:1px solid #ddd;
+      border-radius:8px;
+      font-size:15px;
+      ">
+
+            <input type="password"
+                   id="adminPassword"
+                   placeholder="Mật khẩu"
+                   style="
+      width:100%;
+      padding:14px;
+      margin-bottom:20px;
+      border:1px solid #ddd;
+      border-radius:8px;
+      font-size:15px;
+      ">
+
+            <button onclick="loginAdmin()" style="
+    width:100%;
+    padding:14px;
+    background:#d68b3c;
+    border:none;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    border-radius:8px;
+    cursor:pointer;
+    ">
+                Đăng nhập
+            </button>
+
+            <button onclick="closeAdminLogin()" style="
+    width:100%;
+    margin-top:10px;
+    padding:12px;
+    background:#eee;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    ">
+                Hủy
+            </button>
+
+        </div>
+    </div>
+
+
+    <script>
+        function openAdminLogin() {
+            document.getElementById("adminLoginModal").style.display = "flex";
+        }
+
+        function closeAdminLogin() {
+            document.getElementById("adminLoginModal").style.display = "none";
+        }
+
+        function loginAdmin() {
+            let username = document.getElementById("adminUsername").value.trim();
+            let password = document.getElementById("adminPassword").value.trim();
+
+            // tài khoản admin mặc định
+            let adminUser = "DuyF";
+            let adminPass = "DuyF";
+
+            if (username === adminUser && password === adminPass) {
+                alert("Đăng nhập Admin thành công!");
+
+                // lưu trạng thái đăng nhập
+                localStorage.setItem("admin_logged_in", "true");
+
+                // chuyển sang admin panel
+                window.location.href = "admin/admin.html";
+            } else {
+                alert("Sai tài khoản hoặc mật khẩu Admin!");
+            }
+        }
+    </script>
+</body>
+</html>

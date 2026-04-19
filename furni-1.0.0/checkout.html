@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanh toán</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2>🧾 Thanh toán đơn hàng</h2>
+
+        <div class="mb-3">
+            <label>Họ và tên</label>
+            <input type="text" id="customerName" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Số điện thoại</label>
+            <input type="text" id="customerPhone" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Địa chỉ giao hàng</label>
+            <textarea id="customerAddress" class="form-control"></textarea>
+        </div>
+
+        <button class="btn btn-primary" id="saveOrder">
+            Xác nhận đặt hàng
+        </button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $("#saveOrder").click(function () {
+
+            let name = $("#customerName").val();
+            let phone = $("#customerPhone").val();
+            let address = $("#customerAddress").val();
+
+            if (name === "" || phone === "" || address === "") {
+                alert("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+            orders.push({
+                customerName: name,
+                customerPhone: phone,
+                customerAddress: address,
+                items: cart
+            });
+
+            localStorage.setItem("orders", JSON.stringify(orders));
+
+            localStorage.removeItem("cart");
+
+            alert("Đặt hàng thành công!");
+
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+</html>
